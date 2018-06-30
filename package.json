@@ -22,16 +22,7 @@
     "graphql": "^0.13.2",
     "lodash": "^4.17.10"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "nodemon": "^1.17.5"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
+  "devDependencies": {},
   "engines": {
     "node": "9.8.0"
   }
