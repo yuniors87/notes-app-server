@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const schema = require('./schema/schema');
 
+const graphQLServer = express();
+graphQLServer.use(cors);
+
 const GRAPHQL_PORT = process.env.PORT || 4000;
 
 if (process.env.MONGODB_URI) {
@@ -20,9 +23,6 @@ if (process.env.MONGODB_URI) {
     }
   );
 }
-
-const graphQLServer = express();
-graphQLServer.use(cors);
 
 graphQLServer.use(
   '/graphql',
