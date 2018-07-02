@@ -16,7 +16,7 @@ if (process.env.MONGODB_URI) {
       if (err) {
         console.log(err);
       } else {
-        console.log('Conectadp a la bd');
+        console.log('Conectado a la bd');
       }
     }
   );
